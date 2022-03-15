@@ -44,7 +44,8 @@ export default {
 <template>
   <button
     :class="['ui', 'button',
-             { 'loading': isLoading,
+             {
+               'loading': isLoading,
                'fluid': fluid,
                'primary': primary,
                'secondary': secondary,

@@ -46,7 +46,7 @@ export default {
           offset: pagination.value.offset
         });
 
-        gifs.value.push(...data);
+        gifs.value = data
       } catch (error) {
         showToast({ message: "Ocorreu um erro", type: "error" });
       } finally {
@@ -103,7 +103,6 @@ export default {
 
 <template>
   <div
-    :ref="infiniteScrollElement"
     class="ui container"
   >
     <div v-if="isDetailsOpen">

@@ -1,7 +1,11 @@
-# Vue 3 + Vite
+# EngeLink Challenge
 
-This template should help get you started developing with Vue 3 in Vite. The template uses Vue 3 `<script setup>` SFCs, check out the [script setup docs](https://v3.vuejs.org/api/sfc-script-setup.html#sfc-script-setup) to learn more.
+[x] - Listar Gifs através de uma Busca;
+[x] - Visualizar Detalhes de um Gif
 
-## Recommended IDE Setup
 
-- [VSCode](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=johnsoncodehk.volar)
+[x] - Salvar os Gifs na API (Mockados com MirageJS - Também salvos na Store)
+[x] - Editar os Gifs Salvos na API (Mockados com MirageJS - Também salvos na Store)
+[x] - Deletar os Gifs Salvos na API (Mockados com MirageJS - Também salvos na Store)
+
+[x] - docker-compose
