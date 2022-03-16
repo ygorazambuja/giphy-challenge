@@ -3,7 +3,6 @@
 import { ref } from "vue";
 import { onClickOutside } from "@vueuse/core";
 
-
 export default {
   setup() {
     const isMenuVisible = ref(false)
@@ -13,22 +12,16 @@ export default {
     const handleClickOutside = () => isMenuVisible.value = false
     onClickOutside(isMenuVisible, handleClickOutside)
 
-
-
     return {
       isMenuVisible,
       toggleAppBarMenu
     }
   }
 }
-
-
 </script>
 
 <template>
-  <div
-    style="margin-bottom: 8em;"
-  >
+  <div style="margin-bottom: 8em;">
     <div class="ui tablet computer only grid padded">
       <div class="ui top fixed borderless fluid huge menu">
         <div class="ui container">
@@ -101,8 +94,8 @@ export default {
 </template>
 
 <style>
-  .flex-wrap {
-    display: flex;
-    flex-wrap: wrap;
-  }
+.flex-wrap {
+  display: flex;
+  flex-wrap: wrap;
+}
 </style>

@@ -9,3 +9,6 @@
 [x] - Deletar os Gifs Salvos na API (Mockados com MirageJS - Também salvos na Store)
 
 [x] - docker-compose
+[x] - Testes de Store
+[x] - Testes de Componentes
+
