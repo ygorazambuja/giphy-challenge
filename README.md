@@ -21,3 +21,6 @@ para rodar, apenas execute o comando
 docker-compose up --build
 ```
 
+Aplicação será executada na porta 8080
+[Link da Aplicação](http://localhost:8080)
+
