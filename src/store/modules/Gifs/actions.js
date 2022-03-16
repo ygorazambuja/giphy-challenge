@@ -15,9 +15,8 @@ export default {
   [ActionTypes.ADD_FAVOURITE_GIF]: async ({ commit, state }, gif) => {
     const favouriteGifs = [...state.favouriteGifs, gif];
 
-    await addGifOnApi(gif);
-
     commit(MutationTypes.UPDATE_FAVOURITE_GIFS, { favouriteGifs });
+    await addGifOnApi(gif);
   },
 
   [ActionTypes.REMOVE_FAVOURITE_GIF]: async ({ commit, state }, payload) => {
@@ -25,18 +24,16 @@ export default {
 
     const favouriteGifs = state.favouriteGifs.filter((gif) => gif.id !== id);
 
-    await removeGifOnApi(id);
-
     commit(MutationTypes.UPDATE_FAVOURITE_GIFS, { favouriteGifs });
+    await removeGifOnApi(id);
   },
   [ActionTypes.UPDATE_FAVOURITE_GIF]: async ({ commit, state }, gif) => {
     const favouriteGifs = state.favouriteGifs.map((favouriteGif) =>
       favouriteGif.id === gif.id ? gif : favouriteGif
     );
 
-    await updateGifByIdOnApi(gif.id, gif);
-
     commit(MutationTypes.UPDATE_FAVOURITE_GIFS, { favouriteGifs });
+    await updateGifByIdOnApi(gif.id, gif);
   },
 
   toggleFavouriteGif({ state, dispatch }, payload) {
