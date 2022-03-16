@@ -113,6 +113,7 @@ export default {
       />
     </div>
     <h1>Giphy</h1>
+
     <div class="ui stackable two column grid centered">
       <div class="column">
         <v-input
@@ -138,10 +139,10 @@ export default {
       />
     </div>
     <div
-      v-if="gifs.length > 0"
       class="ui grid centered bottom-container"
     >
       <v-button
+        :disabled="gifs.length == 0"
         type="primary"
         :on-click="asyncHandleLoadMore"
       >
