@@ -6,12 +6,14 @@
     "dev": "vite",
     "build": "vite build",
     "preview": "vite preview",
-    "test": "vitest --dom",
-    "start": "vite start"
+    "test": "vitest run --dom",
+    "start": "vite start",
+    "serve": "npx http-server dist"
   },
   "dependencies": {
     "@vueuse/core": "^8.0.0",
     "axios": "^0.19.2",
+    "http-server": "^14.1.0",
     "vue": "^3.2.25",
     "vue-router": "^4.0.13",
     "vuex": "^4.0.2",

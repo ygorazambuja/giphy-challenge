@@ -12,3 +12,12 @@
 - [x] Testes de Store
 - [x] Testes de Componentes
 
+
+## Instruções
+
+para rodar, apenas execute o comando
+
+```
+docker-compose up --build
+```
+
